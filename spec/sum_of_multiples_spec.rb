@@ -29,4 +29,8 @@ describe "SumOfMultiples" do
     s = SumOfMultiples.new(4, 6)
     expect(s.to(15)).to eq 30
   end
+  it "one multiples within limits" do
+    s = SumOfMultiples.new(5, 6, 8)
+    expect(s.to(150)).to eq 4419
+  end
 end
