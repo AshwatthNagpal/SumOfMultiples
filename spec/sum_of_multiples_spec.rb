@@ -53,4 +53,9 @@ describe "SumOfMultiples" do
     s = SumOfMultiples.new(0)
     expect(s.to(1)).to eq 0
   end
+
+  it "sum of multiples of (2,3,5,7,11) within limit 10000" do
+    s = SumOfMultiples.new(2,3,5,7,11)
+    expect(s.to(10000)).to eq 39614537
+  end
 end
