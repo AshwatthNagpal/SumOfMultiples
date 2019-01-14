@@ -38,7 +38,7 @@ describe "SumOfMultiples" do
     expect(s.to(51)).to eq 275
   end
   it "sum of multiples of (43,47) within limit 10000" do
-    s = SumOfMultiples.new(43,47)
+    s = SumOfMultiples.new(43, 47)
     expect(s.to(10000)).to eq 2203160
   end
   it "sum of multiples of (1) within limit 100" do
@@ -48,5 +48,9 @@ describe "SumOfMultiples" do
   it "no multiples return zero" do
     s = SumOfMultiples.new()
     expect(s.to(10000)).to eq 0
+  end
+  it "sum of multiples of zero is zero" do
+    s = SumOfMultiples.new(0)
+    expect(s.to(1)).to eq 0
   end
 end
