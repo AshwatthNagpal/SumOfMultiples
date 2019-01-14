@@ -41,4 +41,8 @@ describe "SumOfMultiples" do
     s = SumOfMultiples.new(43,47)
     expect(s.to(10000)).to eq 2203160
   end
+  it "sum of multiples of (1) within limit 100" do
+    s = SumOfMultiples.new(1)
+    expect(s.to(100)).to eq 4950
+  end
 end
