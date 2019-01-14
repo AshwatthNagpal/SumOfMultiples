@@ -1,10 +1,18 @@
 class SumOfMultiples
-  def initialize(i, j)
+  def initialize(*i)
     @i = i
-    @j = j
   end
 
   def to(k)
-    0
+    sum = 0
+    (1...k).to_a.each do |num|
+      @i.each do |h|
+        if (num % h == 0)
+          sum += num
+          break
+        end
+      end
+    end
+    sum
   end
 end
