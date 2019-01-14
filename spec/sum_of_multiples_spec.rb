@@ -45,4 +45,8 @@ describe "SumOfMultiples" do
     s = SumOfMultiples.new(1)
     expect(s.to(100)).to eq 4950
   end
+  it "no multiples return zero" do
+    s = SumOfMultiples.new()
+    expect(s.to(10000)).to eq 0
+  end
 end
